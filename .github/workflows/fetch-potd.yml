@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Checkout main repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -37,7 +37,7 @@ jobs:
           echo "Current picture number: $PICTURE_NUM"
 
       - name: Checkout private pictures repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: Ghostavio/potd-images # Replace with your private repo name
           token: ${{ secrets.POTD_REPO_TOKEN }} # You'll need to create this secret
