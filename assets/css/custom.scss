@@ -1,4 +1,366 @@
 ---
 ---
+
 @charset "utf-8";
-// Your custom css /scss here
+
+// ==========================================================================
+// Custom Styles for gus.today
+// ==========================================================================
+
+// Picture of the Day Styles
+// ==========================================================================
+
+.potd-overlay {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.potd-info {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: #ffffff;
+  text-align: right;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.potd-date {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  opacity: 0.9;
+}
+
+.potd-location {
+  font-size: 0.813rem;
+  font-weight: 400;
+  opacity: 0.8;
+
+  i {
+    margin-right: 4px;
+    color: var(--chulapa-primary, #dc3545);
+  }
+}
+
+// Responsive adjustments for picture overlay
+@media (max-width: 768px) {
+  .potd-overlay {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .potd-info {
+    padding: 8px 12px;
+  }
+
+  .potd-date {
+    font-size: 0.75rem;
+  }
+
+  .potd-location {
+    font-size: 0.688rem;
+  }
+}
+
+// Typography Overrides
+// ==========================================================================
+
+// Modern system font stack for headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.navbar-brand,
+.card-title,
+.hero-chulapa,
+.splash-chulapa,
+.splash-chulapa-image,
+.hero-chulapa-image,
+.chulapa-subtitle,
+.p-summary {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol" !important;
+  font-weight: 700;
+  letter-spacing: -0.02em; // Tighter letter spacing for better readability
+}
+
+.splash-chulapa,
+.splash-chulapa-image {
+  min-height: calc(100vh - 56px);
+}
+
+// Timeline Styles
+// ==========================================================================
+
+.timeline-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+// Timeline Content
+.timeline-content {
+  position: relative;
+  z-index: 1;
+
+  // Vertical line connecting timeline items
+  &::before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      var(--chulapa-primary, #dc3545) 5%,
+      var(--chulapa-primary, #dc3545) 95%,
+      transparent 100%
+    );
+    opacity: 0.5;
+  }
+}
+
+// Timeline Item
+.timeline-item {
+  position: relative;
+  margin-bottom: 80px;
+  padding-left: 60px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Timeline Marker (Dot)
+.timeline-marker {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--chulapa-primary, #dc3545);
+  border: 4px solid var(--chulapa-bg, #fff);
+  box-shadow: 0 0 0 4px rgba(220, 53, 69, 0.2);
+  z-index: 2;
+}
+
+// Timeline Card
+.timeline-card {
+  background: var(--chulapa-bg-alt, rgba(255, 255, 255, 0.05));
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+}
+
+// Timeline Thumbnail
+.timeline-thumbnail {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+  }
+}
+
+// Timeline Year
+.timeline-year {
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--chulapa-primary, #dc3545);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+// Timeline Title
+.timeline-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--chulapa-text, #212529);
+}
+
+// Timeline Company
+.timeline-company {
+  font-size: 1.125rem;
+  color: var(--chulapa-text-muted, #6c757d);
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+// Technologies
+.timeline-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tech-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  background: var(--chulapa-primary, #dc3545);
+  color: #fff;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+// Timeline Description
+.timeline-description {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: var(--chulapa-text, #212529);
+
+  h2,
+  h3,
+  h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  ul,
+  ol {
+    margin-bottom: 1rem;
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .timeline-item {
+    padding-left: 40px;
+  }
+
+  .timeline-marker {
+    width: 16px;
+    height: 16px;
+    border-width: 3px;
+  }
+
+  .timeline-card {
+    padding: 20px;
+  }
+
+  .timeline-title {
+    font-size: 1.5rem;
+  }
+
+  .timeline-animation {
+    opacity: 0.08;
+  }
+
+  .timeline-content::before {
+    left: 8px;
+  }
+}
+
+// Dark theme adjustments
+@media (prefers-color-scheme: dark) {
+  .timeline-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .timeline-marker {
+    border-color: var(--chulapa-bg, #1a1a1a);
+  }
+}
+
+// Additional Custom Styles
+// ==========================================================================
+
+// Hero section enhancements
+.header_type-hero {
+  .display-4 {
+    font-weight: 800;
+  }
+}
+
+// Button enhancements
+.btn {
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+// Card enhancements for blog posts
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// Code block styling
+pre {
+  border-radius: 8px;
+  border-left: 4px solid var(--chulapa-primary, #dc3545);
+}
+
+// Custom scrollbar (for webkit browsers)
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--chulapa-primary, #dc3545);
+  border-radius: 5px;
+
+  &:hover {
+    background: var(--chulapa-primary-dark, #c82333);
+  }
+}

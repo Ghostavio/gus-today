@@ -1,0 +1,51 @@
+# Picture of the Day Metadata
+# Each entry corresponds to the image number (1.avif, 2.avif, etc.)
+# The system will rotate through these based on days since start_date
+
+start_date: "2024-11-26" # When the rotation begins
+
+pictures:
+  1:
+    date: "June 2024"
+    location: "Praia do Cassino, Brazil"
+  2:
+    date: "April 2024"
+    location: "Penha - Santa Catarina, Brazil"
+  3:
+    date: "June 2024"
+    location: "Praia do Trapiche - Penha, Brazil"
+  4:
+    date: "March 2024"
+    location: "Mattilde Boteco - Rio Grande, Brazil"
+  5:
+    date: "April 2024"
+    location: "Ponta da Vigia - Penha, Brazil"
+  6:
+    date: "April 2024"
+    location: "Orla da Henrique Pancada - Rio Grande, Brazil"
+  7:
+    date: "April 2024"
+    location: "Penha - Santa Catarina, Brazil"
+  8:
+    date: "June 2024"
+    location: "Penha - Santa Catarina, Brazil"
+  9:
+    date: "November 2025"
+    location: "Praia do Cassino, Brazil"
+  10:
+    date: "April 2024"
+    location: "Praia do Cascalho - Penha, Brazil"
+  11:
+    date: "April 2024"
+    location: "Penha - Santa Catarina, Brazil"
+  12:
+    date: "April 2024"
+    location: "Orla da Henrique Pancada - Rio Grande, Brazil"
+  13:
+    date: "April 2024"
+    location: "Praia de São Roque - Penha, Brazil"
+  14:
+    date: "April 2024"
+    location: "Penha - Santa Catarina, Brazil"
+  # Add more pictures as you upload them
+  # The system will cycle through them automatically

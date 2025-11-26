@@ -1,0 +1,75 @@
+---
+layout: default
+---
+
+<div class="container-lg">
+  <div class="timeline-container py-5">
+    <!-- Page Header -->
+    <div class="text-center mb-5">
+      <h1 class="display-4 font-weight-bold">{{ page.title }}</h1>
+      {% if page.subtitle %}
+      <p class="lead text-muted">{{ page.subtitle }}</p>
+      {% endif %}
+    </div>
+
+    <!-- Timeline Content -->
+    <div class="timeline-content">
+      {% assign sorted_timeline = site.timeline | sort: 'order' %} {% for item
+      in sorted_timeline %}
+      <div class="timeline-item" data-year="{{ item.year }}">
+        <div class="timeline-marker"></div>
+
+        <div class="timeline-card">
+          {% if item.thumbnail %}
+          <div class="timeline-thumbnail">
+            <img
+              src="{{ item.thumbnail | relative_url }}"
+              alt="{{ item.title }}"
+              loading="lazy"
+            />
+          </div>
+          {% endif %}
+
+          <div class="timeline-details">
+            <span class="timeline-year">{{ item.year }}</span>
+            <h3 class="timeline-title">{{ item.title }}</h3>
+            <p class="timeline-company">{{ item.company }}</p>
+
+            {% if item.technologies %}
+            <div class="timeline-technologies">
+              {% for tech in item.technologies %}
+              <span class="tech-badge">{{ tech }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
+
+            <div class="timeline-description">{{ item.content }}</div>
+
+            {% if item.website %}
+            <a
+              href="{{ item.website }}"
+              class="btn btn-primary"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fas fa-external-link-alt"></i> Visit Project
+            </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<!-- Load Timeline Animation Scripts -->
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+  defer
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+  defer
+></script>
+<script src="{{ '/assets/js/timeline.js' | relative_url }}" defer></script>

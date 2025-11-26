@@ -1,0 +1,18 @@
+{% comment %} Calculate which picture to show based on current date Pictures
+rotate daily starting from the start_date in _data/pictures.yml {% endcomment %}
+{% assign start_date = site.data.pictures.start_date | date: "%s" %} {% assign
+current_date = "now" | date: "%s" %} {% assign seconds_diff = current_date |
+minus: start_date %} {% assign days_diff = seconds_diff | divided_by: 86400 %}
+{% assign total_pictures = site.data.pictures.pictures.size %} {% assign
+picture_num = days_diff | modulo: total_pictures | plus: 1 %} {% assign
+current_picture = site.data.pictures.pictures[picture_num] %}
+
+<div class="potd-overlay">
+  <div class="potd-info">
+    <h6 class="potd-title mt-1">Picture of the Day</h6>
+    <div class="potd-date">{{ current_picture.date }}</div>
+    <div class="potd-location">
+      <i class="fas fa-map-marker-alt"></i> {{ current_picture.location }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,75 @@
+---
+layout: default
+---
+
+<article class="container-lg py-5">
+  <div class="row">
+    <div class="col-lg-8 mx-auto">
+      <!-- Breadcrumb -->
+      {% if page.show_breadcrumb %}
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Home</a></li>
+          <li class="breadcrumb-item"><a href="/timeline/">Timeline</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            {{ page.title }}
+          </li>
+        </ol>
+      </nav>
+      {% endif %}
+
+      <!-- Header -->
+      <header class="mb-5">
+        <span class="badge badge-primary mb-3">{{ page.year }}</span>
+        <h1 class="display-4 font-weight-bold mb-3">{{ page.title }}</h1>
+        <p class="lead text-muted">{{ page.company }}</p>
+
+        {% if page.technologies %}
+        <div class="mb-3">
+          {% for tech in page.technologies %}
+          <span class="badge badge-secondary mr-1">{{ tech }}</span>
+          {% endfor %}
+        </div>
+        {% endif %} {% if page.website %}
+        <a
+          href="{{ page.website }}"
+          class="btn btn-outline-primary"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="fas fa-external-link-alt"></i> Visit Project
+        </a>
+        {% endif %}
+      </header>
+
+      <!-- Thumbnail -->
+      {% if page.thumbnail %}
+      <div class="mb-5">
+        <img
+          src="{{ page.thumbnail | relative_url }}"
+          alt="{{ page.title }}"
+          class="img-fluid rounded shadow-sm"
+        />
+      </div>
+      {% endif %}
+
+      <!-- Content -->
+      <div class="content">{{ content }}</div>
+
+      <!-- Social Share -->
+      {% if page.show_sociallinks %}
+      <div class="mt-5 pt-4 border-top">
+        <h5 class="mb-3">Share this project</h5>
+        <!-- Social share buttons will be added by the theme -->
+      </div>
+      {% endif %}
+
+      <!-- Back to Timeline -->
+      <div class="mt-5">
+        <a href="/timeline/" class="btn btn-secondary">
+          <i class="fas fa-arrow-left"></i> Back to Timeline
+        </a>
+      </div>
+    </div>
+  </div>
+</article>

@@ -1,25 +1,81 @@
 ---
 layout: default
-title: Chulapa on remote
-header_type: hero
-subtitle: Starter pack
+title: Gustavo Siqueira
+header_type: image
+subtitle: Software Engineer from Brazil
+header_img: /assets/images/potd/current.avif
+header_type: splash
+header_img_credit: Praia do Cassino, Brazil
+include_on_search: false
 ---
 
-Click [**Use this template**](https://github.com/dieghernan/chulapa-101/generate) button above for cloning this repo and get started with [Chulapa Jekyll theme](https://github.com/dieghernan/chulapa).
+<div class="container-lg py-5">
+  <div class="row">
+    <div class="col-lg-8 mx-auto text-center">
+      
+      <!-- Introduction -->
+      <div class="mb-5">
+        <h2 class="display-5 font-weight-bold mb-4">Welcome!</h2>
+        <p class="lead">
+          I'm a Software Engineer passionate about building elegant solutions to complex problems.
+          This is where I share my journey, projects, and thoughts on software development.
+        </p>
+      </div>
 
-Contains basic configuration to get you a site with:
+      <!-- Quick Links -->
+      <div class="row mb-5">
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <i class="fas fa-timeline fa-3x text-primary mb-3"></i>
+              <h3 class="card-title">Career Timeline</h3>
+              <p class="card-text">
+                Explore my professional journey, projects, and the technologies I've worked with over the years.
+              </p>
+              <a href="/timeline/" class="btn btn-primary">View Timeline</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <i class="fas fa-blog fa-3x text-primary mb-3"></i>
+              <h3 class="card-title">Blog</h3>
+              <p class="card-text">
+                Read my articles on software engineering, tutorials, best practices, and personal insights.
+              </p>
+              <a href="/blog/" class="btn btn-primary">Read Blog</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-- Sample posts and [paginated blog index](./blog/).
-- Sample collection with Markdown and kramdown cheatsheets and [collection index](./cheatsheets).
-- Archive pages for posts grouped by year, category, and tag.
-- Github Action for deploying the site.
-- Demo page with the different Bootstrap components and how they look with the actual skin settings.
-- Sample 404 page.
-- Site search with Lunr.
-- Sample `_config` with minimal configuration. `primary` color is set to <span class="text-primary">LightSkyBlue</span> and `autothemer` is enabled. [Learn how to customize your site](https://dieghernan.github.io/chulapa/docs/03-theming).
-- Sample `algolia-search.yml` for using Algolia+GitHub Actions.
-- Sample files for extending the theme with your own scripts and css.
+      <!-- Latest Blog Posts -->
+      <div class="mb-5">
+        <h3 class="mb-4">Latest Articles</h3>
+        <div class="list-group">
+          {% for post in site.posts limit:3 %}
+            <a href="{{ post.url | relative_url }}" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">{{ post.title }}</h5>
+                <small class="text-muted">{{ post.date | date: "%b %d, %Y" }}</small>
+              </div>
+              {% if post.excerpt %}
+                <p class="mb-1">{{ post.excerpt | strip_html | truncate: 150 }}</p>
+              {% endif %}
+              {% if post.tags %}
+                <small class="text-muted">
+                  {% for tag in post.tags limit:3 %}
+                    <span class="badge badge-secondary">{{ tag }}</span>
+                  {% endfor %}
+                </small>
+              {% endif %}
+            </a>
+          {% endfor %}
+        </div>
+      </div>
 
-On addition, `jekyll-sitemap` generates your sitemap on [./sitemap.xml](./sitemap.xml), and Chulapa generates an Atom feed on [./atom.xml](./atom.xml) and a RSS 2.0 feed on [./rss.xml](./rss.xml).
+    </div>
 
-[Configure as necessary](https://dieghernan.github.io/chulapa/docs/02-config) and replace sample content with your own.
+  </div>
+</div>
