@@ -6,6 +6,10 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch: # Allow manual trigger
 
+# Grant write permissions to push commits
+permissions:
+  contents: write
+
 jobs:
   fetch-image:
     runs-on: ubuntu-latest
@@ -20,7 +24,7 @@ jobs:
         id: calc
         run: |
           # Calculate days since start date
-          START_DATE="2025-11-24"
+          START_DATE="2025-11-25"
           CURRENT_DATE=$(date +%Y-%m-%d)
 
           # Convert dates to seconds and calculate difference
