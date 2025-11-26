@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://gus.today/blog/welcome/</loc>
+<lastmod>2024-11-25T14:00:00-03:00</lastmod>
+</url>
+<url>
+<loc>https://gus.today/timeline/example-project/</loc>
+<lastmod>2024-01-15T00:00:00-03:00</lastmod>
+</url>
+<url>
+<loc>https://gus.today/archive</loc>
+</url>
+<url>
+<loc>https://gus.today/categories</loc>
+</url>
+<url>
+<loc>https://gus.today/blog/</loc>
+</url>
+<url>
+<loc>https://gus.today/</loc>
+</url>
+<url>
+<loc>https://gus.today/search.html</loc>
+</url>
+<url>
+<loc>https://gus.today/tags</loc>
+</url>
+<url>
+<loc>https://gus.today/timeline/</loc>
+</url>
+</urlset>

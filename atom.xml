@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" >
+	<generator uri="https://dieghernan.github.io/chulapa" version="1.0.0">Chulapa</generator>
+	<link href="https://gus.today/atom.xml" rel="self" type="application/atom+xml" />
+	<link href="https://gus.today/" rel="alternate" type="text/html" />
+	<updated>2025-11-25T23:23:39-03:00</updated>
+	<id>https://gus.today/atom.xml</id>
+	<title>Gustavo Siqueira | Software Engineer</title>
+	<subtitle>Software Engineer</subtitle>
+	<author>
+		<name>Gustavo Siqueira</name>
+		<uri>https://github.com/Ghostavio</uri>			
+	</author>
+	<rights>(c) 2025, Gustavo Siqueira</rights>
+	<icon>https://gus.today/assets/gs.svg</icon>
+	<logo>https://github.com/Ghostavio.png</logo><entry>
+		<title type="html">Welcome to My New Website</title>
+		<link href="https://gus.today/blog/welcome/" rel="alternate" type="text/html" title="Welcome to My New Website"/>
+		<published>2024-11-25T14:00:00-03:00</published>
+		<updated>2024-11-25T14:00:00-03:00</updated>
+		<id>https://gus.today/blog/welcome/</id>
+		<content type="html" xml:base="https://gus.today/blog/welcome/">
+		
+		
+		&lt;h3&gt;First post on gus.today&lt;/h3&gt;
+		
+  		
+	&lt;p&gt;1 min.&lt;/p&gt;
+			&lt;h2 id=&quot;welcome&quot;&gt;Welcome!&lt;/h2&gt;
+
+&lt;p&gt;I’m excited to launch my new personal website at &lt;strong&gt;gus.today&lt;/strong&gt;! This site serves as a home for my professional timeline, technical blog, and eventually a Picture of the Day section.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-youll-find-here&quot;&gt;What You’ll Find Here&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Career Timeline&lt;/strong&gt;: An interactive journey through my professional experiences, highlighting the projects I’ve worked on, the technologies I’ve mastered, and the impact I’ve made.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Blog&lt;/strong&gt;: Technical articles, tutorials, best practices, and personal insights about software engineering and technology.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Picture of the Day&lt;/strong&gt;: Coming soon - a curated collection of daily photography (stay tuned!).&lt;/p&gt;
+
+&lt;h3 id=&quot;built-with&quot;&gt;Built With&lt;/h3&gt;
+
+&lt;p&gt;This site is built using:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; - Static site generator&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dieghernan.github.io/chulapa/&quot;&gt;Chulapa&lt;/a&gt; - Beautiful Jekyll theme&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt; - Hosting&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sunset skin&lt;/strong&gt; - For that elegant dark theme with red accents&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;whats-next&quot;&gt;What’s Next&lt;/h3&gt;
+
+&lt;p&gt;I’ll be populating the timeline with my career highlights and publishing technical articles regularly. Follow along for:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Software engineering insights&lt;/li&gt;
+  &lt;li&gt;Best practices and patterns&lt;/li&gt;
+  &lt;li&gt;Technology deep dives&lt;/li&gt;
+  &lt;li&gt;Personal projects and experiments&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Stay tuned for more content!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Connect with me:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Ghostavio&quot;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.linkedin.com/in/codenamegus/&quot;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://instagram.com/Ghostavio&quot;&gt;Instagram&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:gustavo.anacleto@gmail.com&quot;&gt;Email&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+		</content>
+		
+		<author>
+			<name></name></author>
+		<summary type="html">&lt;h2 id=&quot;welcome&quot;&gt;Welcome!&lt;/h2&gt;
+</summary>
+		<category term="posts"/>
+		<category term="announcement"/><category term="jekyll"/><category term="web-development"/>
+	</entry></feed>
