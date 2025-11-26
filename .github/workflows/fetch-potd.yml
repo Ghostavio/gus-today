@@ -20,7 +20,7 @@ jobs:
         id: calc
         run: |
           # Calculate days since start date
-          START_DATE="2024-11-26"
+          START_DATE="2025-11-24"
           CURRENT_DATE=$(date +%Y-%m-%d)
 
           # Convert dates to seconds and calculate difference
