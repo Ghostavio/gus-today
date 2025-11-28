@@ -2,7 +2,7 @@
 # Each entry corresponds to the image number (1.avif, 2.avif, etc.)
 # The system will rotate through these based on days since start_date
 
-start_date: "2024-11-26" # When the rotation begins
+start_date: "2024-11-28" # When the rotation begins
 
 pictures:
   1:
