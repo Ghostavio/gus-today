@@ -24,7 +24,7 @@ jobs:
         id: calc
         run: |
           # Calculate days since start date
-          START_DATE="2025-11-25"
+          START_DATE="2025-11-28"
           CURRENT_DATE=$(date +%Y-%m-%d)
 
           # Convert dates to seconds and calculate difference
@@ -59,15 +59,22 @@ jobs:
             echo "⚠️  Picture $PICTURE_NUM.avif not found, keeping existing"
           fi
 
+      - name: Update index.md with cache-busted URL
+        run: |
+          # Add date parameter to image URL for cache busting
+          CURRENT_DATE=$(date +%Y-%m-%d)
+          sed -i.bak "s|header_img: /assets/images/potd/current\.avif.*|header_img: /assets/images/potd/current.avif?v=$CURRENT_DATE|" index.md
+          rm index.md.bak
+
       - name: Commit and push if changed
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
 
-          if git diff --quiet assets/images/potd/; then
+          if git diff --quiet assets/images/potd/ index.md; then
             echo "No changes to commit"
           else
-            git add assets/images/potd/current.avif
-            git commit -m "Update Picture of the Day"
+            git add assets/images/potd/current.avif index.md
+            git commit -m "Update Picture of the Day (${{ steps.calc.outputs.picture_num }})"
             git push
           fi
