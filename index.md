@@ -3,7 +3,7 @@ layout: default
 title: Gustavo Siqueira
 header_type: image
 subtitle: Software Engineer from Brazil
-header_img: /assets/images/potd/current.avif?v=2026-09-30
+header_img: /assets/images/potd/current.avif?v=2026-10-01
 header_type: splash
 include_on_search: false
 ---
