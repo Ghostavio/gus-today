@@ -1,26 +1,24 @@
-<!doctype html>
-<html lang="en-US"><head>
+<!doctype html><html lang="en-US"><head>
    <meta charset="utf-8">
-    <!-- Chulapa Jekyll Theme - v2.0.1.0001 -->
+    <!-- Chulapa Jekyll Theme - v2.1.0 -->
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2026-10-08 -->
+    <!-- Page build 2026-10-09 -->
      <!-- Jekyll Version 4.4.1 -->
     <!--Google Structured Data-->
     <script type="application/ld+json">
         {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://gus.today/blog/"
-      },
-      "headline": "Blog",
+      "@id": "https://gus.today/blog/",
+      "name": "Blog",
+      "description": "News and updates - Latest news",
+      "headline":"Blog",
       "image": "https://gus.today/assets/img/site/banner-blog.png",
       "author": {
         "@type": "Person",
-        "name": "Gustavo Siqueira"
+        "name":"Gustavo Siqueira"
         , "url": "https://github.com/Ghostavio"
         ,  "sameAs" : [
              "https://www.linkedin.com/in/codenamegus/"
@@ -29,51 +27,48 @@
             ]
       },
        "publisher": {
-        "@type": "Organization",
-        "name": "Gustavo Siqueira",
-        "url": "https://gus.today/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://github.com/Ghostavio.png"
-        }
-      }
+  "@type": "Organization",
+  "name": "Gustavo Siqueira",
+  "url": "https://gus.today/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://github.com/Ghostavio.png"
+    }
+}
     }
     </script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
+      "@id":"https://gus.today/blog/#breadcrumb",
       "itemListElement": [{
         "@type": "ListItem",
+        "@id":"https://gus.today/blog/#breadcrumb-1",
         "position": 1,
         "name": "Gustavo Siqueira",
-        "item": "https://gus.today/"
+        "item":"https://gus.today/"
       },{
         "@type": "ListItem",
+        "@id":"https://gus.today/blog/#breadcrumb-2",
         "position": 2,
+        "item": "https://gus.today/blog/",
         "name": "Blog"
       }]
     }
     </script>
 <script type="application/ld+json">
-	{
-	"@context": "https://schema.org",
-	"@type": "WebPage",
-	"name": "Blog",
-	"description": "News and updates - Latest news"
-	}
-</script><script type="application/ld+json">
 {
   "@context" : "https://schema.org",
   "@type" : "Person",
-  "image": "https://github.com/Ghostavio.png",
+  "image":"https://github.com/Ghostavio.png",
   "homeLocation": {
     "@type": "Place",
     "name": "Brazil"
     },
   "description": "Publisher",
-  "name" : "Gustavo Siqueira",
-  "url" : "https://gus.today/"
+  "name" :"Gustavo Siqueira",
+  "url" :"https://gus.today/"
   ,  "sameAs" : [
   "https://github.com/Ghostavio",
   "https://www.linkedin.com/in/codenamegus/",
@@ -93,17 +88,17 @@
    <meta name="copyright" content="Gustavo Siqueira" >
    <meta name="description" content="News and updates - Latest news">
    <meta name="thumbnail" content="https://gus.today/assets/img/site/banner-blog.png" >
-   <meta name="robots" content="index, follow"><meta name="keywords" content="">
+   <meta name="robots" content="index, follow">
     <!-- OpenGraph -->
    <meta property="og:title" content="Blog  |  Gustavo Siqueira" >
-   <meta property="og:site_name" content="Gustavo Siqueira  |  Software Engineer" >
+   <meta property="og:site_name" content="Gustavo Siqueira" >
    <meta property="og:url" content="https://gus.today/blog/" >
    <meta property="og:type" content="website" >
-   <meta property="og:description" content="News and updates - Latest news" >
-   <meta property="og:locale" content="en_US" >
+   <meta property="og:description" content="News and updates - Latest news" ><meta property="og:locale" content="en_US">
    <meta property="og:image" content="https://gus.today/assets/img/site/banner-blog.png" >
     <!-- Twitter/X Cards -->
-   <meta name="twitter:card" content="summary_large_image"><!-- start custom head snippets -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:description" content="News and updates - Latest news"><!-- start custom head snippets -->
 <!-- this script is inserted before the css stylesheet -->
 <link
   rel="icon"
@@ -128,8 +123,8 @@
     <!-- Fontawesome-->
     <!-- v6 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css">
-    <link rel="preload" href="https://cdn.jsdelivr.net/gh/dieghernan/chulapa@master/assets/js/chulapa_script.js" as="script" >
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/dieghernan/chulapa@master/assets/fonts/Chulapa/Chulapa-Bold_vmod.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="/assets/js/chulapa_script.js" as="script" >
+  <link rel="preload" href="/assets/fonts/Chulapa/Chulapa-Bold_vmod.otf" as="font" type="font/otf" crossorigin>
     <!-- Theme css (Bootstrap included) -->
   <link rel="stylesheet" id="maincss" href="https://gus.today/assets/css/main.css" >
     <!-- Highlighter -->
@@ -158,8 +153,8 @@ ga('send', 'pageview');
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 <!-- end custom head snippets -->
 </head>
-<body class="d-flex flex-column h-entry" id="body">
-	<a class="u-url d-none" href="https://gus.today/blog/">Invisible link to canonical for Microformats</a>
+<body class="d-flex flex-column" id="body">
+	<a class="sr-only sr-only-focusable chulapa-skip-link" href="#chulapa-content">Skip to content</a>
 	<nav class="navbar navbar-expand-md sticky-top navbar-chulapa" aria-label="primary-navigation">
 	<div class="container-fluid mx-md-2">
 			<a class="navbar-brand font-weight-bold" href="https://gus.today/"><img src="https://gus.today/assets/gs.svg" width="30" height="30" class="d-inline-block align-top rounded-lg mr-1" alt="NavbarLogo"></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -173,14 +168,15 @@ ga('send', 'pageview');
 					</li><li class="nav-item">
 						<a class="nav-link  active font-weight-bold" href="https://gus.today/blog/">Blog<span class="sr-only">(current)</span></a>
 					</li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle " href="#" id="More" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
-						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="More"><a class="dropdown-item " href="https://gus.today/tags">Tags</a><a class="dropdown-item " href="https://gus.today/categories">Categories</a><a class="dropdown-item " href="https://gus.today/archive">Archive</a><a class="dropdown-item " href="https://gus.today/search">Search</a></div>
+						<div class="dropdown-menu dropdown-menu-right" role="group" aria-labelledby="More"><a class="dropdown-item " href="https://gus.today/tags">Tags</a><a class="dropdown-item " href="https://gus.today/categories">Categories</a><a class="dropdown-item " href="https://gus.today/archive">Archive</a><a class="dropdown-item " href="https://gus.today/search">Search</a></div>
 					</li><li class="nav-item">
 						<a class="nav-link " href="https://gus.today/search">
 							<span class="d-md-none p-0 pr-1">Search</span><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">Search</span>
 						</a>
 					</li></ul>
 			</div></div>
-</nav><!-- Chulapa template for pagination --><header class="text-center header-chulapa"><div class="container-lg mt-2">
+</nav>
+			<div id="chulapa-content" tabindex="-1"></div><!-- Chulapa template for pagination --><header class="text-center header-chulapa"><div class="container-lg mt-2">
        <div class="row">
          <div class="col-lg-8 offset-lg-2">
            <h1 class="p-name"><p>Blog</p></h1><p class="lead chulapa-subtitle p-summary"><p>News and updates</p>
@@ -196,13 +192,13 @@ ga('send', 'pageview');
 <div class="col-12 mb-2">
 <div class="card chulapa-border-card-index">
 	<div class="row g-0">
-		<a href="https://gus.today/blog/welcome/" class="col-sm-1 chulapa-min-h-10 chulapa-card-img chulapa-overlay-img chulapa-gradient d-none d-sm-flex  "
+		<a href="https://gus.today/blog/welcome/" aria-label="Welcome to My New Website" class="col-sm-1 chulapa-min-h-10 chulapa-card-img chulapa-overlay-img chulapa-gradient d-none d-sm-flex  "
 >
 		</a>
 		<div class="col-sm">
 			<article class="card-body chulapa-links-hover-only">
-				<a href="https://gus.today/blog/welcome/"><h5 class="card-title">Welcome to My New Website</h5></a>
-				<h6 class="card-subtitle mb-2 text-muted">First post on gus.today</h6><div class="card-text">Welcome!
+				<a href="https://gus.today/blog/welcome/"><h2 class="h5 card-title">Welcome to My New Website</h2></a>
+				<p class="h6 card-subtitle mb-2 chulapa-text-body-color">First post on gus.today</p><div class="card-text">Welcome!
 </div>
 			</article>
 			<div class="border-top-0 card-footer border-primary chulapa-bg-transparent">
@@ -252,7 +248,7 @@ ga('send', 'pageview');
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/gh/dieghernan/chulapa@master/assets/js/chulapa_script.js"></script>
+	<script src="/assets/js/chulapa_script.js"></script>
 	<!-- start custom scripts to be placed at the bottom of the page -->
 <!-- end custom bottom scripts -->
 	</body>
