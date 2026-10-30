@@ -6,7 +6,7 @@
     <!-- MIT License -->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2026-10-29 -->
+    <!-- Page build 2026-10-30 -->
     <!-- Jekyll Version 4.4.1 -->
     <!-- Google structured data -->
     <script type="application/ld+json">
@@ -14,12 +14,16 @@
         "@context": "https://schema.org",
         "@type": "WebPage",
         "@id": "https://gus.today/blog/",
+        "isPartOf": {"@id": "https://gus.today/#website"},
+        "breadcrumb": {"@id": "https://gus.today/blog/#breadcrumb"},
         "name": "Blog",
         "description": "News and updates - Latest news",
+        "inLanguage": "en-US",
         "headline": "Blog",
         "image": "https://gus.today/assets/img/site/banner-blog.png",
         "author": {
           "@type": "Person",
+          "@id": "https://gus.today/#author",
           "name": "Gustavo Siqueira",
           "url": "https://github.com/Ghostavio",
           "sameAs": [
@@ -29,6 +33,7 @@
         },
         "publisher": {
           "@type": "Organization",
+          "@id": "https://gus.today/#publisher",
           "name": "Gustavo Siqueira",
           "url": "https://gus.today/",
           "logo": {
@@ -63,6 +68,7 @@
       {
         "@context": "https://schema.org",
         "@type": "Person",
+        "@id": "https://gus.today/#author",
         "image": "https://github.com/Ghostavio.png",
         "homeLocation": {
           "@type": "Place",
@@ -76,6 +82,16 @@
           "https://www.linkedin.com/in/codenamegus/",
           "https://instagram.com/Ghostavio"
         ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://gus.today/#website",
+        "url": "https://gus.today/",
+        "name": "Gustavo Siqueira",
+        "publisher": {"@id": "https://gus.today/#publisher"}
       }
     </script>
     <title>Blog  |  Gustavo Siqueira</title>
@@ -102,7 +118,7 @@
     <!-- Twitter/X Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:description" content="News and updates - Latest news">
-    <!-- start custom head snippets -->
+<!-- start custom head snippets -->
 <!-- this script is inserted before the css stylesheet -->
 <link
   rel="icon"
@@ -153,7 +169,7 @@
     ga('send', 'pageview');
     </script>
     <!-- End Google Analytics -->
-    <!-- start custom head snippets -->
+<!-- start custom head snippets -->
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 <!-- end custom head snippets -->
 </head>

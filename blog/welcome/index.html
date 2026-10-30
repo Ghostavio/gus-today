@@ -6,7 +6,7 @@
     <!-- MIT License -->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2026-10-29 -->
+    <!-- Page build 2026-10-30 -->
     <!-- Jekyll Version 4.4.1 -->
     <!-- Google structured data -->
     <script type="application/ld+json">
@@ -18,20 +18,20 @@
           "@type": "WebPage",
           "@id": "https://gus.today/blog/welcome/"
         },
+        "inLanguage": "en-US",
+        "isPartOf": {"@id": "https://gus.today/#website"},
+        "keywords": ["announcement","jekyll","web-development"],"articleSection": ["Personal"],
         "headline": "Welcome to My New Website",
         "datePublished": "2024-11-25T14:00:00-03:00",
         "dateModified": "2024-11-25T14:00:00-03:00",
         "author": {
           "@type": "Person",
-          "name": "Gustavo Siqueira",
-          "url": "https://github.com/Ghostavio",
-          "sameAs": [
-            "https://www.linkedin.com/in/codenamegus/",
-            "https://instagram.com/Ghostavio"
-          ]
+          "@id": "https://gus.today/blog/welcome/#author",
+          "name": "Gustavo Siqueira"
         },
         "publisher": {
           "@type": "Organization",
+          "@id": "https://gus.today/#publisher",
           "name": "Gustavo Siqueira",
           "url": "https://gus.today/",
           "logo": {
@@ -70,6 +70,8 @@
         "@type": "WebPage",
         "@id": "https://gus.today/blog/welcome/",
         "isPartOf": {"@id": "https://gus.today/#website"},
+        "breadcrumb": {"@id": "https://gus.today/blog/welcome/#breadcrumb"},
+        "mainEntity": {"@id": "https://gus.today/blog/welcome/#article"},
         "name": "Welcome to My New Website",
         "description": "Introducing my new personal website built with Jekyll and the Chulapa theme"
       }
@@ -78,6 +80,7 @@
       {
         "@context": "https://schema.org",
         "@type": "Person",
+        "@id": "https://gus.today/#author",
         "image": "https://github.com/Ghostavio.png",
         "homeLocation": {
           "@type": "Place",
@@ -97,8 +100,19 @@
       {
         "@context": "https://schema.org",
         "@type": "Person",
+        "@id": "https://gus.today/blog/welcome/#author",
         "description": "Collaborator",
         "name": ""
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://gus.today/#website",
+        "url": "https://gus.today/",
+        "name": "Gustavo Siqueira",
+        "publisher": {"@id": "https://gus.today/#publisher"}
       }
     </script>
     <title>Welcome to My New Website  |  Gustavo Siqueira</title>
@@ -130,7 +144,7 @@
     <!-- Twitter/X Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:description" content="Introducing my new personal website built with Jekyll and the Chulapa theme">
-    <!-- start custom head snippets -->
+<!-- start custom head snippets -->
 <!-- this script is inserted before the css stylesheet -->
 <link
   rel="icon"
@@ -181,7 +195,7 @@
     ga('send', 'pageview');
     </script>
     <!-- End Google Analytics -->
-    <!-- start custom head snippets -->
+<!-- start custom head snippets -->
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 <!-- end custom head snippets -->
 </head>
