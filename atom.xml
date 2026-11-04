@@ -3,13 +3,14 @@
 	<generator uri="https://dieghernan.github.io/chulapa" version="1.0.0">Chulapa</generator>
 	<link href="https://gus.today/atom.xml" rel="self" type="application/atom+xml" />
 	<link href="https://gus.today/" rel="alternate" type="text/html" />
-	<updated>2026-11-03T02:30:54-03:00</updated>
+	<updated>2026-11-04T01:59:28-03:00</updated>
 	<id>https://gus.today/atom.xml</id>
 	<title>Gustavo Siqueira | Software Engineer</title>
 	<subtitle>Software Engineer</subtitle>
+	
 	<author>
 		<name>Gustavo Siqueira</name>
-		<uri>https://github.com/Ghostavio</uri>			
+		<uri>https://github.com/Ghostavio</uri>
 	</author>
 	<rights>(c) 2026, Gustavo Siqueira</rights>
 	<icon>https://gus.today/assets/gs.svg</icon>
@@ -76,7 +77,9 @@
 		</content>
 		
 		<author>
-			<name></name></author>
+			<name></name>
+			
+		</author>
 		<summary type="html">&lt;h2 id=&quot;welcome&quot;&gt;Welcome!&lt;/h2&gt;
 </summary>
 		<category term="posts"/>
