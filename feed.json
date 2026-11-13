@@ -1,0 +1,27 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Gustavo Siqueira",
+  "home_page_url": "https://gus.today/",
+  "feed_url": "https://gus.today/feed.json",
+  "language": "en-US",
+  "description": "Personal website and blog of Gustavo Siqueira, Software Engineer from Brazil",
+  "icon": "https://github.com/Ghostavio.png",
+  "favicon": "https://gus.today/assets/gs.svg",
+  "authors": [{
+    "name": "Gustavo Siqueira",
+    "url": "https://github.com/Ghostavio"
+  }],
+  "items": [
+    {
+      "id": "https://gus.today/blog/welcome/",
+      "url": "https://gus.today/blog/welcome/",
+      "title": "Welcome to My New Website",
+      "content_html": "<h2 id=\"welcome\">Welcome!</h2>\n\n<p>I’m excited to launch my new personal website at <strong>gus.today</strong>! This site serves as a home for my professional timeline, technical blog, and eventually a Picture of the Day section.</p>\n\n<h3 id=\"what-youll-find-here\">What You’ll Find Here</h3>\n\n<p><strong>Career Timeline</strong>: An interactive journey through my professional experiences, highlighting the projects I’ve worked on, the technologies I’ve mastered, and the impact I’ve made.</p>\n\n<p><strong>Blog</strong>: Technical articles, tutorials, best practices, and personal insights about software engineering and technology.</p>\n\n<p><strong>Picture of the Day</strong>: Coming soon - a curated collection of daily photography (stay tuned!).</p>\n\n<h3 id=\"built-with\">Built With</h3>\n\n<p>This site is built using:</p>\n\n<ul>\n  <li><a href=\"https://jekyllrb.com/\">Jekyll</a> - Static site generator</li>\n  <li><a href=\"https://dieghernan.github.io/chulapa/\">Chulapa</a> - Beautiful Jekyll theme</li>\n  <li><a href=\"https://pages.github.com/\">GitHub Pages</a> - Hosting</li>\n  <li><strong>Sunset skin</strong> - For that elegant dark theme with red accents</li>\n</ul>\n\n<h3 id=\"whats-next\">What’s Next</h3>\n\n<p>I’ll be populating the timeline with my career highlights and publishing technical articles regularly. Follow along for:</p>\n\n<ul>\n  <li>Software engineering insights</li>\n  <li>Best practices and patterns</li>\n  <li>Technology deep dives</li>\n  <li>Personal projects and experiments</li>\n</ul>\n\n<p>Stay tuned for more content!</p>\n\n<hr />\n\n<p><strong>Connect with me:</strong></p>\n\n<ul>\n  <li><a href=\"https://github.com/Ghostavio\">GitHub</a></li>\n  <li><a href=\"https://www.linkedin.com/in/codenamegus/\">LinkedIn</a></li>\n  <li><a href=\"https://instagram.com/Ghostavio\">Instagram</a></li>\n  <li><a href=\"mailto:gustavo.anacleto@gmail.com\">Email</a></li>\n</ul>\n",
+      "date_published": "2024-11-25T14:00:00-03:00",
+      "summary": "Welcome!",
+      "tags": ["announcement","jekyll","web-development"],
+      "authors": []
+    }
+    
+  ]
+}

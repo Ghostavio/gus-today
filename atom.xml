@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" >
-	<generator uri="https://dieghernan.github.io/chulapa" version="1.0.0">Chulapa</generator>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
+	<generator uri="https://dieghernan.github.io/chulapa">Chulapa</generator>
 	<link href="https://gus.today/atom.xml" rel="self" type="application/atom+xml" />
 	<link href="https://gus.today/" rel="alternate" type="text/html" />
-	<updated>2026-11-12T02:55:40-03:00</updated>
+	<updated>2024-11-25T14:00:00-03:00</updated>
 	<id>https://gus.today/atom.xml</id>
 	<title>Gustavo Siqueira | Software Engineer</title>
 	<subtitle>Software Engineer</subtitle>
@@ -26,7 +26,8 @@
 		&lt;h3&gt;First post on gus.today&lt;/h3&gt;
 		
   		
-	&lt;p&gt;1 min.&lt;/p&gt;
+
+			&lt;p&gt;1 min.&lt;/p&gt;
 			&lt;h2 id=&quot;welcome&quot;&gt;Welcome!&lt;/h2&gt;
 
 &lt;p&gt;I’m excited to launch my new personal website at &lt;strong&gt;gus.today&lt;/strong&gt;! This site serves as a home for my professional timeline, technical blog, and eventually a Picture of the Day section.&lt;/p&gt;

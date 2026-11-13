@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
 	<channel>
 		<title>Gustavo Siqueira | Software Engineer</title>
 		<generator>(c) Chulapa Jekyll Theme RSS generator</generator>
@@ -7,78 +7,82 @@
 		<description>Personal website and blog of Gustavo Siqueira, Software Engineer from Brazil</description>
 		<language>en-US</language>
 		<copyright>(c) 2026, Gustavo Siqueira</copyright>
-		<pubDate>Thu, 12 Nov 2026 02:55:40 -0300</pubDate>
-		<lastBuildDate>Thu, 12 Nov 2026 02:55:40 -0300</lastBuildDate>
+		<pubDate>Mon, 25 Nov 2024 14:00:00 -0300</pubDate>
+		<lastBuildDate>Fri, 13 Nov 2026 02:18:06 -0300</lastBuildDate>
 		<category>blog</category>
 		<ttl>60</ttl>
 		<atom:link href="https://gus.today/rss.xml" rel="self" type="application/rss+xml" />
+		
 		<image>
 			<title>Gustavo Siqueira | Software Engineer</title>
 			<url>https://github.com/Ghostavio.png</url>
 			<link>https://gus.today/</link>
 			<description>Personal website and blog of Gustavo Siqueira, Software Engineer from Brazil</description>
 		</image>
+		
 		<item>
 			
 			<title>Welcome to My New Website</title>
-			<description>
-				<![CDATA[	
- 				<h3>First post on gus.today</h3>
-    		<p>1 min.</p>
-				<div><h2 id="welcome">Welcome!</h2>
+			
+			<description>&lt;h2 id=&quot;welcome&quot;&gt;Welcome!&lt;/h2&gt;
+</description>
+			<content:encoded>
+ 				&lt;h3&gt;First post on gus.today&lt;/h3&gt;
+				&lt;p&gt;1 min.&lt;/p&gt;
+				&lt;div&gt;&lt;h2 id=&quot;welcome&quot;&gt;Welcome!&lt;/h2&gt;
 
-<p>I’m excited to launch my new personal website at <strong>gus.today</strong>! This site serves as a home for my professional timeline, technical blog, and eventually a Picture of the Day section.</p>
+&lt;p&gt;I’m excited to launch my new personal website at &lt;strong&gt;gus.today&lt;/strong&gt;! This site serves as a home for my professional timeline, technical blog, and eventually a Picture of the Day section.&lt;/p&gt;
 
-<h3 id="what-youll-find-here">What You’ll Find Here</h3>
+&lt;h3 id=&quot;what-youll-find-here&quot;&gt;What You’ll Find Here&lt;/h3&gt;
 
-<p><strong>Career Timeline</strong>: An interactive journey through my professional experiences, highlighting the projects I’ve worked on, the technologies I’ve mastered, and the impact I’ve made.</p>
+&lt;p&gt;&lt;strong&gt;Career Timeline&lt;/strong&gt;: An interactive journey through my professional experiences, highlighting the projects I’ve worked on, the technologies I’ve mastered, and the impact I’ve made.&lt;/p&gt;
 
-<p><strong>Blog</strong>: Technical articles, tutorials, best practices, and personal insights about software engineering and technology.</p>
+&lt;p&gt;&lt;strong&gt;Blog&lt;/strong&gt;: Technical articles, tutorials, best practices, and personal insights about software engineering and technology.&lt;/p&gt;
 
-<p><strong>Picture of the Day</strong>: Coming soon - a curated collection of daily photography (stay tuned!).</p>
+&lt;p&gt;&lt;strong&gt;Picture of the Day&lt;/strong&gt;: Coming soon - a curated collection of daily photography (stay tuned!).&lt;/p&gt;
 
-<h3 id="built-with">Built With</h3>
+&lt;h3 id=&quot;built-with&quot;&gt;Built With&lt;/h3&gt;
 
-<p>This site is built using:</p>
+&lt;p&gt;This site is built using:&lt;/p&gt;
 
-<ul>
-  <li><a href="https://jekyllrb.com/">Jekyll</a> - Static site generator</li>
-  <li><a href="https://dieghernan.github.io/chulapa/">Chulapa</a> - Beautiful Jekyll theme</li>
-  <li><a href="https://pages.github.com/">GitHub Pages</a> - Hosting</li>
-  <li><strong>Sunset skin</strong> - For that elegant dark theme with red accents</li>
-</ul>
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; - Static site generator&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dieghernan.github.io/chulapa/&quot;&gt;Chulapa&lt;/a&gt; - Beautiful Jekyll theme&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt; - Hosting&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Sunset skin&lt;/strong&gt; - For that elegant dark theme with red accents&lt;/li&gt;
+&lt;/ul&gt;
 
-<h3 id="whats-next">What’s Next</h3>
+&lt;h3 id=&quot;whats-next&quot;&gt;What’s Next&lt;/h3&gt;
 
-<p>I’ll be populating the timeline with my career highlights and publishing technical articles regularly. Follow along for:</p>
+&lt;p&gt;I’ll be populating the timeline with my career highlights and publishing technical articles regularly. Follow along for:&lt;/p&gt;
 
-<ul>
-  <li>Software engineering insights</li>
-  <li>Best practices and patterns</li>
-  <li>Technology deep dives</li>
-  <li>Personal projects and experiments</li>
-</ul>
+&lt;ul&gt;
+  &lt;li&gt;Software engineering insights&lt;/li&gt;
+  &lt;li&gt;Best practices and patterns&lt;/li&gt;
+  &lt;li&gt;Technology deep dives&lt;/li&gt;
+  &lt;li&gt;Personal projects and experiments&lt;/li&gt;
+&lt;/ul&gt;
 
-<p>Stay tuned for more content!</p>
+&lt;p&gt;Stay tuned for more content!&lt;/p&gt;
 
-<hr />
+&lt;hr /&gt;
 
-<p><strong>Connect with me:</strong></p>
+&lt;p&gt;&lt;strong&gt;Connect with me:&lt;/strong&gt;&lt;/p&gt;
 
-<ul>
-  <li><a href="https://github.com/Ghostavio">GitHub</a></li>
-  <li><a href="https://www.linkedin.com/in/codenamegus/">LinkedIn</a></li>
-  <li><a href="https://instagram.com/Ghostavio">Instagram</a></li>
-  <li><a href="mailto:gustavo.anacleto@gmail.com">Email</a></li>
-</ul>
-</div>
-				]]>
-			</description>
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Ghostavio&quot;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.linkedin.com/in/codenamegus/&quot;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://instagram.com/Ghostavio&quot;&gt;Instagram&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;mailto:gustavo.anacleto@gmail.com&quot;&gt;Email&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+				</content:encoded>
 			<link>https://gus.today/blog/welcome/</link>
 			<category>posts</category>
-		    <category>announcement</category><category>jekyll</category><category>web-development</category><media:title type="html"><![CDATA[Welcome to My New Website ]]></media:title>
+		    <category>announcement</category><category>jekyll</category><category>web-development</category><media:title type="plain">Welcome to My New Website</media:title>
       <media:content url="https://github.com/Ghostavio.png" medium="image"/>
       <media:thumbnail url="https://github.com/Ghostavio.png" /><guid isPermaLink="true">https://gus.today/blog/welcome/</guid>
       <pubDate>Mon, 25 Nov 2024 14:00:00 -0300</pubDate>
+      
 		</item></channel>
 </rss>
