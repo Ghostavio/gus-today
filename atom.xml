@@ -1,34 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
-	<generator uri="https://dieghernan.github.io/chulapa">Chulapa</generator>
-	<link href="https://gus.today/atom.xml" rel="self" type="application/atom+xml" />
-	<link href="https://gus.today/" rel="alternate" type="text/html" />
-	<updated>2024-11-25T14:00:00-03:00</updated>
-	<id>https://gus.today/atom.xml</id>
-	<title>Gustavo Siqueira | Software Engineer</title>
-	<subtitle>Software Engineer</subtitle>
-	
-	<author>
-		<name>Gustavo Siqueira</name>
-		<uri>https://github.com/Ghostavio</uri>
-	</author>
-	<rights>(c) 2026, Gustavo Siqueira</rights>
-	<icon>https://gus.today/assets/gs.svg</icon>
-	<logo>https://github.com/Ghostavio.png</logo><entry>
-		<title type="html">Welcome to My New Website</title>
-		<link href="https://gus.today/blog/welcome/" rel="alternate" type="text/html" title="Welcome to My New Website"/>
-		<published>2024-11-25T14:00:00-03:00</published>
-		<updated>2024-11-25T14:00:00-03:00</updated>
-		<id>https://gus.today/blog/welcome/</id>
-		<content type="html" xml:base="https://gus.today/blog/welcome/">
-		
-		
-		&lt;h3&gt;First post on gus.today&lt;/h3&gt;
-		
-  		
-
-			&lt;p&gt;1 min.&lt;/p&gt;
-			&lt;h2 id=&quot;welcome&quot;&gt;Welcome!&lt;/h2&gt;
+  <generator uri="https://dieghernan.github.io/chulapa">Chulapa</generator>
+  <link href="https://gus.today/atom.xml" rel="self" type="application/atom+xml" />
+  <link href="https://gus.today/" rel="alternate" type="text/html" />
+  <updated>2024-11-25T14:00:00-03:00</updated>
+  <id>https://gus.today/atom.xml</id>
+  <title type="text">Gustavo Siqueira | Software Engineer</title>
+  <subtitle type="text">Software Engineer</subtitle>
+  
+  <author>
+    <name>Gustavo Siqueira</name>
+    <uri>https://github.com/Ghostavio</uri>
+  </author>
+  <rights>(c) 2026, Gustavo Siqueira</rights>
+  <icon>https://gus.today/assets/gs.svg</icon>
+  <logo>https://github.com/Ghostavio.png</logo>
+  
+  <entry>
+    <title type="text">Welcome to My New Website</title>
+    <link href="https://gus.today/blog/welcome/" rel="alternate" type="text/html" title="Welcome to My New Website" />
+    <published>2024-11-25T14:00:00-03:00</published>
+    <updated>2024-11-25T14:00:00-03:00</updated>
+    <id>https://gus.today/blog/welcome/</id>
+    <content type="html" xml:base="https://gus.today/blog/welcome/">&lt;p&gt;First post on gus.today&lt;/p&gt;&lt;p&gt;1 min.&lt;/p&gt;
+    &lt;h2 id=&quot;welcome&quot;&gt;Welcome!&lt;/h2&gt;
 
 &lt;p&gt;I’m excited to launch my new personal website at &lt;strong&gt;gus.today&lt;/strong&gt;! This site serves as a home for my professional timeline, technical blog, and eventually a Picture of the Day section.&lt;/p&gt;
 
@@ -74,15 +69,16 @@
   &lt;li&gt;&lt;a href=&quot;https://instagram.com/Ghostavio&quot;&gt;Instagram&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;mailto:gustavo.anacleto@gmail.com&quot;&gt;Email&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-		</content>
-		
-		<author>
-			<name></name>
-			
-		</author>
-		<summary type="html">&lt;h2 id=&quot;welcome&quot;&gt;Welcome!&lt;/h2&gt;
+</content>
+    <author>
+      <name>Guest author</name>
+      
+    </author>
+    <summary type="html">&lt;h2 id=&quot;welcome&quot;&gt;Welcome!&lt;/h2&gt;
 </summary>
-		<category term="posts"/>
-		<category term="announcement"/><category term="jekyll"/><category term="web-development"/>
-	</entry></feed>
+    <category term="posts" />
+    <category term="announcement" />
+    <category term="jekyll" />
+    <category term="web-development" />
+    </entry>
+</feed>
